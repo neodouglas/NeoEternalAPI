@@ -1,0 +1,4 @@
+amino.fix
+requests
+flask
+gunicorn
