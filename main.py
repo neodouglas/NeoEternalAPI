@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 @app.route('/api/login')
 def get_timezone():
-  data = request.args
+  data = request.form
   login = data.get("login")
   password = data.get("password")
   device = data.get("device")
