@@ -5,13 +5,12 @@ os.system('set FLASK_ENV=development')
 app = Flask(__name__)
 
 
-@app.route('/api/login')
+@app.route('/api/login',  methods = ['POST'])
 def get_timezone():
   data = request.form
   login = data.get("login")
   password = data.get("password")
   device = data.get("device")
-  print(login)
   client = aminofix.Client(device)
   client.login(email = login, password = password)
   return f"{client.sid}"
