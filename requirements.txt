@@ -1,4 +1,4 @@
-amino.fix
+amino.fix==2.3.4.11
 requests
 flask
 gunicorn
