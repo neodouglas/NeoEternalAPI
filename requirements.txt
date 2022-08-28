@@ -1,4 +1,5 @@
-amino.fix==2.3.4.11
+amino.fix
+heroku3
 requests
 flask
 gunicorn
