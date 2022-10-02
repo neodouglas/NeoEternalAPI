@@ -25,9 +25,9 @@ def get_timezone():
     except:
         try:
             restart(key, name)
-            return abort(404)
+            return 'f'
         except:
-            return abort(404)
+            return 'ff'
 
 
 
